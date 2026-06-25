@@ -3,9 +3,6 @@ python-multipart
 uvicorn
 celery[redis]
 redis
-# docling 2.2.0 imports BoundingBox from docling_core.types.legacy_doc.base, which
-# docling-core >=2.83 removed -> ImportError at runtime. Pin the docling stack to the
-# last versions proven compatible (see CI run #4, 2026-06-17) for reproducible builds.
 docling==2.2.0
 docling-core==2.82.0
 docling-ibm-models==2.0.8
